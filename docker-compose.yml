@@ -1,0 +1,10 @@
+services:
+  app:
+    build: .
+    image: express-vue-app
+    ports:
+      - "3011:3011"
+    environment:
+      NODE_ENV: production
+      PORT: "3011"
+    restart: unless-stopped
